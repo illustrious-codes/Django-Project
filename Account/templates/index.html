@@ -1,0 +1,76 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+<!-- <h1>Happy Sunday</h1> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="post">
+        {% csrf_token %}
+        <h1>Contact Us</h1>
+
+        <!-- FULL NAME -->
+        <div class="fullname">
+          <label for="fullname">Full Name</label>
+
+          <div class="fullname_input_container">
+            <div>
+              <input
+                type="text"
+                class="field"
+                placeholder="First Name"
+                name="first_name"
+              />
+              <span>First</span>
+            </div>
+
+            <div>
+              <input
+                type="text"
+                class="field"
+                placeholder="Last Name"
+                name="last_name"
+              />
+              <span>Last</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" class="field" placeholder="Email" name="email" />
+        </div>
+
+        <div>
+          <label for="words">Leave us a few words</label>
+          <textarea
+            id="words"
+            cols="30"
+            rows="10"
+            class="field"
+            name="message"
+          ></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

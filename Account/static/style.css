@@ -1,0 +1,89 @@
+/* h1 {
+  color: red;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: linear-gradient(120deg, #ae3404, #350135);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+form {
+  width: 40%;
+  padding: 1rem 2rem;
+  padding-bottom: 3rem;
+  background: #131313e9;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.fullname_input_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.fullname_input_container > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 14px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+form input:focus {
+  background: #e4e4e4;
+}
+
+form button {
+  align-self: center;
+  background: #c33400;
+  border-radius: 10px;
+  padding: 7px 15px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+form button:hover {
+  background: #731f01;
+}
